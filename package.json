@@ -2,13 +2,16 @@
   "name": "scatter-backend",
   "version": "1.0.0",
   "description": "Node.js backend for the scatter app",
-  "main": "app.ts",
+  "main": "dist/app.js",
   "scripts": {
+    "tsc": "tsc",
+    "build": "rm -rf dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Zach Taylor",
   "license": "ISC",
   "dependencies": {
+    "graphql-yoga": "^1.18.3",
     "typescript": "^3.8.3"
   }
 }
