@@ -1,5 +1,5 @@
 # Specifies the HTTP endpoint of your Prisma API (deployed to a Prisma Demo server).
-endpoint: https://us1.prisma.sh/public-pollenmind-680/scatter-back/dev
+endpoint: https://us1.prisma.sh/public-sunsetotter-709/scatter-back/dev
 
 # Defines your models, each model is mapped to the database as a table.
 datamodel: datamodel.prisma
@@ -20,5 +20,5 @@ hooks:
 
 # If specified, the `secret` must be used to generate a JWT which is attached
 # to the `Authorization` header of HTTP requests made against the Prisma API.
-# Info: https://www.prisma.io/docs/prisma-graphql-api/reference/authentication-ghd4/
-# secret: mysecret123
+# Info: https://www.prisma.io/docs/reference/prisma-api/concepts-utee3eiquo#authentication
+# secret: ${env:PRISMA_SECRET}
